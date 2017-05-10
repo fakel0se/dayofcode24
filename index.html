@@ -79,7 +79,7 @@
 			//player disconnected
 			socket.on('dis', function(playerID) {
 				stage.removeChild(window[playerID].circle);
-				stage.removeChild(window[playerID].sprite);
+				stage.removeChild(window[playerID].pointer);
 			});		
 		
 			stage.on('stagemousemove', function(evt) {
